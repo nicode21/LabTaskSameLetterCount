@@ -96,26 +96,24 @@
 
 
 
-let name = "hhhlluysyu";
+let name = "kkkkttttyyyttttuuuusssuuu";
 
 let count = 0;
 
 let arr = [];
 
+// let result = name.replaceAll("t", " ");
+
+// console.log(result);
+
+
 for (let i = 0; i < name.length; i++) {
 
   if (name[i - 1] != name[i]) {
 
-    for (let j = 0; j < name.length; j++) {
 
-      if (name[j] == name[i]) {
+    count = name.replaceAll(name[i], " ").split(" ").length - 1;
 
-        count++;
-
-
-      }
-
-    }
 
     if (arr.includes(`${name[i]} count : ${count}`)) {
     } else {
